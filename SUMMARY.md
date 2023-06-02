@@ -1,8 +1,8 @@
 # Table of contents
 
 * [1 - System Security](README.md)
-  * [a - Architecture Fundamentals](1-system-security/a-architecture-fundamentals.md)
-  * [b - Compiling](1-system-security/b-compiling.md)
-  * [c - Debugging](1-system-security/c-debugging.md)
-  * [d - Decompiling](1-system-security/d-decompiling.md)
+  * [a - Architecture Fundamentals](system-security/1.2-architecture-fundamentals.md)
+  * [b - Compiling](system-security/compiling.md)
+  * [c - Debugging](system-security/debugging.md)
+  * [d - Decompiling](system-security/decompiling.md)
   * [e - Buffer Overflows](1-system-security/e-buffer-overflows.md)

@@ -1,4 +1,4 @@
-# Decompiling
+# d - Decompiling
 
 There are different tools that allows us to do this. In the same Dev-C++ folder where the "gcc" executable is located, is a file called "objdump.exe".
 
