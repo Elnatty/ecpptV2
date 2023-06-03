@@ -5,4 +5,5 @@
   * [b - Compiling](system-security/compiling.md)
   * [c - Debugging](system-security/debugging.md)
   * [d - Decompiling](system-security/decompiling.md)
-  * [e - Buffer Overflows](1-system-security/e-buffer-overflows.md)
+  * [e - Buffer Overflows](1-system-security/e-buffer-overflows/README.md)
+    * [Buffer Overflows with Immunity Debugger](1-system-security/e-buffer-overflows/buffer-overflows-with-immunity-debugger.md)
