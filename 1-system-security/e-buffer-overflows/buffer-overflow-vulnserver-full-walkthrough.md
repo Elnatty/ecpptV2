@@ -1,4 +1,14 @@
+---
+description: 'resource: https://samsclass.info/127/proj/p16-spike.htm'
+---
+
 # Buffer Overflow - VulnServer Full Walkthrough
+
+```bash
+s_readline();
+s_string("TRUN ");
+s_string_variable("COMMAND");
+```
 
 ## Step 1
 
