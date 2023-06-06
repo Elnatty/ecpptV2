@@ -8,3 +8,7 @@
   * [e - Buffer Overflows](1-system-security/e-buffer-overflows/README.md)
     * [Buffer Overflows with Immunity Debugger](1-system-security/e-buffer-overflows/buffer-overflows-with-immunity-debugger.md)
     * [Buffer Overflow - VulnServer Full Walkthrough](1-system-security/e-buffer-overflows/buffer-overflow-vulnserver-full-walkthrough.md)
+    * [Lab 1 - goodpwd](1-system-security/e-buffer-overflows/lab-1-goodpwd/README.md)
+      * [Main Program](1-system-security/e-buffer-overflows/lab-1-goodpwd/main-program.md)
+      * [Main Program Exploitation with C](1-system-security/e-buffer-overflows/lab-1-goodpwd/main-program-exploitation-with-c.md)
+      * [Main Program Exploitation with C++](1-system-security/e-buffer-overflows/lab-1-goodpwd/main-program-exploitation-with-c++.md)
