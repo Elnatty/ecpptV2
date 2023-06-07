@@ -55,7 +55,7 @@ This time the function will only copy 10bytes of data from argv\[1], while the r
 
 ### Explaining What happens in the Memory Stack during a Buffer Overflow
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 When the "Strcpy" function gets executed, it starts copying our input into the memory address allocated for buffer\[10]. Since there is not enough space, our input will be copued in the next memory address and will continue to fill memory addresses until there is no more input. While this is happening, it will also be overwriting all the data in those memory locations and causing the overflow.
 
@@ -144,11 +144,11 @@ The function "good\_password" is never executed. (Why?) Because the variable "pa
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>18</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption><p>19</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption><p>19</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>20</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption><p>21</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption><p>21</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption><p>22</p></figcaption></figure>
 
