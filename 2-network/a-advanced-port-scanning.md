@@ -62,9 +62,13 @@ A very popular mistake administrators make is to allow traffic from specific por
 
 `sudo nmap --spoof-mac 11:22:33:44:55 192.168.0.141 -p 80 -Pn --disable-arp-ping -n` - specifying a mac of our choice.
 
+#### 5 - Randomize the host during scan
 
+We create a host.list with 4 ips inside, then instruct nmap to use this list. `sudo nmap -iL host.list -sS -p 80,443,21,22,135,555 --randomize-hosts` - this technique will have higher results while scanning a target with higher delay, adding a delay on our port scannin will make the scan stealthier.
 
+#### 6 - Delay scan
 
+`sudo nmap -iL host.list -sS -p 80,443,21,22,135,555 --randomize-hosts -T 2 $ip`  - adds the T2  which slows down the scan.
 
-
+`hping3 -1 --rand-dest 192.168.0.x -I eth0` - the "x" specifies the subnet range to randomize, the "-1"  enables the icmp probes.
 

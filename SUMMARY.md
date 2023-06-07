@@ -15,3 +15,6 @@
     * [Finding BoF's](1-system-security/e-buffer-overflows/finding-bofs.md)
 * [2 - Network](2-network/README.md)
   * [a - Advanced Port Scanning](2-network/a-advanced-port-scanning.md)
+  * [b - Authentication Bruteforcing](2-network/b-authentication-bruteforcing.md)
+  * [c - Bypassing FWs and Data Exfiltration with DNS Tunelling](2-network/c-bypassing-fws-and-data-exfiltration-with-dns-tunelling.md)
+  * [Page 1](2-network/page-1.md)
