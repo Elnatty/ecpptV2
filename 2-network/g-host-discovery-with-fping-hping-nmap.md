@@ -30,7 +30,7 @@
 
 `sudo hping3 -Y 192.168.0.112 -c 2 -p 80` -  YMAS scan (SYN, FIN, URG, and PSH flags are set to 1).
 
-`udo hping3 -1 192.168.0.x --rand-dest -I eth0` - sending/scanning entire subnet with icmp messages.
+`sudo hping3 -1 192.168.0.x --rand-dest -I eth0` - sending/scanning entire subnet with icmp messages.
 
 ### \[nmap]
 

@@ -14,7 +14,7 @@ As we can see that the 1st 2 packets are being fragmented, the default fragmenta
 
 We can break the packets into more Fragments, we can use the "--data-length \<number>, for example if we add extra bytes to our payload, we will see more fragments in wireshark.
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 More fragment may hide our scan from detection.&#x20;
 

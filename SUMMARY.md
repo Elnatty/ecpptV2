@@ -21,3 +21,8 @@
   * [e - Pivoting](2-network/e-pivoting.md)
   * [f - Foca and Shodan](2-network/f-foca-and-shodan.md)
   * [g - Host Discovery with fping, hping, nmap](2-network/g-host-discovery-with-fping-hping-nmap.md)
+  * [h - Hping](2-network/h-hping.md)
+  * [i - Idle Scan (hping and nmap)](2-network/i-idle-scan-hping-and-nmap.md)
+  * [j - DNS Information Gathering](2-network/j-dns-information-gathering.md)
+  * [k - Persistence](2-network/k-persistence.md)
+  * [l -Maltego](2-network/l-maltego.md)
