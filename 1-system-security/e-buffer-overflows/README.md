@@ -134,7 +134,7 @@ The function "good\_password" is never executed. (Why?) Because the variable "pa
 
 <figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption><p>13</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption><p>14</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26) (1).png" alt=""><figcaption><p>14</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption><p>15</p></figcaption></figure>
 

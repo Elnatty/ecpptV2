@@ -17,4 +17,7 @@
   * [a - Advanced Port Scanning](2-network/a-advanced-port-scanning.md)
   * [b - Authentication Bruteforcing](2-network/b-authentication-bruteforcing.md)
   * [c - Bypassing FWs and Data Exfiltration with DNS Tunelling](2-network/c-bypassing-fws-and-data-exfiltration-with-dns-tunelling.md)
-  * [Page 1](2-network/page-1.md)
+  * [d - Unqouted Service Paths](2-network/d-unqouted-service-paths.md)
+  * [e - Pivoting](2-network/e-pivoting.md)
+  * [f - Foca and Shodan](2-network/f-foca-and-shodan.md)
+  * [g - Host Discovery with fping, hping, nmap](2-network/g-host-discovery-with-fping-hping-nmap.md)
