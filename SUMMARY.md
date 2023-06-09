@@ -27,3 +27,7 @@
   * [k - Persistence](2-network/k-persistence.md)
   * [l -Maltego](2-network/l-maltego.md)
   * [m - MITM](2-network/m-mitm.md)
+  * [n - Mapping a Network](2-network/n-mapping-a-network.md)
+  * [o - Metasploit  Basic Usage](2-network/o-metasploit-basic-usage.md)
+  * [p - Meterpreter SSL Certificate Impersonation and Detection Evasion](2-network/p-meterpreter-ssl-certificate-impersonation-and-detection-evasion.md)
+  * [q -](2-network/q.md)
