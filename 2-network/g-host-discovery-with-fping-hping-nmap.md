@@ -34,6 +34,8 @@
 
 ### \[nmap]
 
+`sudo nmap --scanflags FIN $ip` - set the FIN flag and scan host.
+
 `man nmap| grep -e "-sn"` - help for any argument in kali.
 
 `sudo nmap 192.168.0.112 -sn` - DNS.

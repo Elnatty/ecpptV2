@@ -30,4 +30,5 @@
   * [n - Mapping a Network](2-network/n-mapping-a-network.md)
   * [o - Metasploit  Basic Usage](2-network/o-metasploit-basic-usage.md)
   * [p - Meterpreter SSL Certificate Impersonation and Detection Evasion](2-network/p-meterpreter-ssl-certificate-impersonation-and-detection-evasion.md)
-  * [q - netBOIS and null Session (port 135)](2-network/q-netbois-and-null-session-port-135.md)
+  * [q - netBOIS and null Session (port 135)](2-network/q.md)
+  * [r -](2-network/r.md)

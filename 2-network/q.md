@@ -20,5 +20,11 @@ description: done in windows cmd prompt terminal
 
 * Winpringerprint: a gui tool that when given an ip range or ip address performs several scan in order to find much info as possible about the shared resource.
 
+## For Linux
 
+We use **\[enum4linux]** to enumerate.
+
+`enum4linux -u "vagrant" -p "vagrant" -a -v $ip` - enum all&#x20;
+
+`smbclient \\192.168.0.177\C$` - access a share.
 
