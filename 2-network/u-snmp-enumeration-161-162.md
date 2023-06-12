@@ -27,3 +27,7 @@ Nmap provides us with a script and a wordlist for this purpose.&#x20;
 `nmap -sU -p 161 --script snmp-brute $ip` - tries to get the community string value via bruteforcing.
 
 `nmap -sU -p 161 --script snmp-win32-users $ip`  - returns available users on the machine.
+
+### Bruteforce SNMP Community Strings
+
+`nmap -sU -p 161 $ip --script snmp-brute --script-args snmp-brute.communitiesdb=/usr/share/SecLists/Miscc/wordlist-commonpsnmp-community-strings.txt` - using custom wordlist (SecLists) to bruteforce for the community string value.

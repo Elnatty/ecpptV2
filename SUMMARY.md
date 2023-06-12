@@ -31,7 +31,7 @@
   * [o - Metasploit  Basic Usage](2-network/o-metasploit-basic-usage.md)
   * [p - Meterpreter SSL Certificate Impersonation and Detection Evasion](2-network/p-meterpreter-ssl-certificate-impersonation-and-detection-evasion.md)
   * [q - netBOIS and null Session (port 135)](2-network/q.md)
-  * [r - Obtaining Stored Credentials with SessionGopher](2-network/r-obtaining-stored-credentials-with-sessiongopher.md)
+  * [r - Obtaining Stored Credentials with SessionGopher](2-network/r.md)
   * [s - Pillaging](2-network/s-pillaging.md)
   * [t - Privilege Escalation](2-network/t-privilege-escalation.md)
   * [u - SNMP Enumeration 161,162](2-network/u-snmp-enumeration-161-162.md)
