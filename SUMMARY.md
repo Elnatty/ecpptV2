@@ -35,4 +35,4 @@
   * [s - Pillaging](2-network/s-pillaging.md)
   * [t - Privilege Escalation](2-network/t-privilege-escalation.md)
   * [u - SNMP Enumeration 161,162](2-network/u-snmp-enumeration-161-162.md)
-  * [v -](2-network/v.md)
+  * [v - Anonymity during Pentests](2-network/v-anonymity-during-pentests.md)

