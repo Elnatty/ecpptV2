@@ -1,5 +1,9 @@
 # m - MITM
 
+### LLMNR and NetBIOS NS&#x20;
+
+[https://www.crowe.com/cybersecurity-watch/netbios-llmnr-giving-away-credentials#:\~:text=LLMNR%20stands%20for%20link%2Dlocal,host%20names%20on%20local%20networks.](https://www.crowe.com/cybersecurity-watch/netbios-llmnr-giving-away-credentials)
+
 ### Arp Poisoning
 
 #### We 1st make our Kali machine able to forward traffic:
@@ -34,6 +38,30 @@ While the MITM attack is running, we just need to run dsniff on the interface an
 
 `dsniff -i eth0` - we start to see credentials.
 
+### \[tcpdump] utity
+
+`tcpdump -i eth0` - sniff on the eth0 interface (promiscious mode).
+
+`tcpdump -i eth0 -v` - more info.
+
+`tcpdump -i eth0 -n` - disable DNS resolution.
+
+`tcpdump -i eth0 -q` - quiet mode.&#x20;
+
+`tcpdump -i eth0 host google.com` - filter for particular website/host.
+
+`tcpdump -i eth0 src 192.168.0.100 and dst 192.168.0.178` - filter traffic for source and dst host.
+
+`tcpdump -i eth0 -F filename.txt`  - import filter from a file.
+
+`tcpdump -i eth0 -c 100` - specify count/number of packets to capture.
+
+`tcpdump -i eth0 -w output.txt` - save capture to file. to read it,
+
+`tcpdump -i eth0 -r output.txt` - to read the captured file.
+
+`tcpdump -i eth0 | grep 192.168.1.1` - grep for that specific ip addr.
+
 ### \[ettercap]
 
 `ettercap -G &` - to run in GUI mode.
@@ -51,6 +79,3 @@ While the MITM attack is running, we just need to run dsniff on the interface an
 >> net.sniff on # then turn on net.sniff to start sniffing packets.
 ```
 {% endcode %}
-
-
-

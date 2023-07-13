@@ -1,4 +1,4 @@
-# c - Bypassing FWs and Data Exfiltration with DNS Tunelling
+# Bypassing FWs and Data Exfiltration with DNS Tunelling
 
 **DNS Tunelling** is a method we can use to bypass authenticated proxies, FWs, captive portals and and can also be used to exfilterate data from a network to an attacker controlled endpoint on the internet over DNS.
 
@@ -21,11 +21,3 @@ Some common DNS tunnelling tools include:
 * **Dnscat2**
 * **Tuns**
 * **Iodine**
-
-\
-
-
-
-
-
-

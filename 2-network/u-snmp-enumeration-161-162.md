@@ -28,6 +28,8 @@ Nmap provides us with a script and a wordlist for this purpose.&#x20;
 
 `nmap -sU -p 161 --script snmp-win32-users $ip`  - returns available users on the machine.
 
+`nmap -sU -p 161 --script snmp-win32-services $ip`  - returns available services running in the victim.
+
 ### Bruteforce SNMP Community Strings
 
 `nmap -sU -p 161 $ip --script snmp-brute --script-args snmp-brute.communitiesdb=/usr/share/SecLists/Miscc/wordlist-commonpsnmp-community-strings.txt` - using custom wordlist (SecLists) to bruteforce for the community string value.
