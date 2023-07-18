@@ -117,7 +117,7 @@ The function "good\_password" is never executed. (Why?) Because the variable "pa
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>5</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>6</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>6</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>7</p></figcaption></figure>
 
@@ -129,7 +129,7 @@ The function "good\_password" is never executed. (Why?) Because the variable "pa
 
 <figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption><p>11</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption><p>12</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (1).png" alt=""><figcaption><p>12</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption><p>13</p></figcaption></figure>
 
@@ -149,7 +149,7 @@ The function "good\_password" is never executed. (Why?) Because the variable "pa
 
 <figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption><p>21</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption><p>22</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption><p>22</p></figcaption></figure>
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```cpp

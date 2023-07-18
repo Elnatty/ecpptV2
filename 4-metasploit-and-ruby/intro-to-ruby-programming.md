@@ -1,5 +1,7 @@
 # Intro to Ruby Programming
 
+[https://github.com/Elnatty/Ruby](https://github.com/Elnatty/Ruby)
+
 ## Intro To Ruby Programming
 
 {% file src="../.gitbook/assets/1_index.rb" %}

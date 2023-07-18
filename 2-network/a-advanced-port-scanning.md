@@ -8,7 +8,7 @@ In order to bypass FWs, we can use to nmap -f to fragment packets while sending 
 
 `sudo nmap -f 192.168.0.141 -n -p80 --disable-arp-ping -Pn`&#x20;
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (2).png" alt=""><figcaption></figcaption></figure>
 
 As we can see that the 1st 2 packets are being fragmented, the default fragmentation of the header is displayed on the 1st 2 packets, while the SYN scan takes place on the 3rd packet.
 
