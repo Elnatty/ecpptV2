@@ -48,7 +48,7 @@ We use **\[enum4linux]** to enumerate.
 
 mounting file shares
 
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption><p>1</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (34) (1).png" alt=""><figcaption><p>1</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption><p>2</p></figcaption></figure>
 

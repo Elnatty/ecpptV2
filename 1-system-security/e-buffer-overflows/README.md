@@ -111,11 +111,11 @@ The function "good\_password" is never executed. (Why?) Because the variable "pa
 
 <figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption><p>2</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>3</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>3</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption><p>4</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>5</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>5</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>6</p></figcaption></figure>
 
@@ -141,7 +141,7 @@ The function "good\_password" is never executed. (Why?) Because the variable "pa
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>17</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>18</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>18</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (25) (1) (1).png" alt=""><figcaption><p>19</p></figcaption></figure>
 
@@ -202,7 +202,7 @@ os.system(command)
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>25</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>26</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>26</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption><p>27</p></figcaption></figure>
 
